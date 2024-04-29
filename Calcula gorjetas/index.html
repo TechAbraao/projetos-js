@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="HandheldFriendly" content="true" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="shortcut icon" type="image/png" href="/images/tip.png" />
+        <link rel="stylesheet" href="style/style.css" />
+        <title>calculadora de gorjeta</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div id="calculator">
+                    <h3>Calculadora de Gorjeta</h3>
+                    <div class="line-title"></div>
+
+                    <label for="amount">Valor da Conta</label>
+
+                    <div class="input-container">
+                        <button>
+                            <i class="fas fa-dollar-sign"></i>
+                        </button>
+                        <input type="number" id="amount" />
+                    </div>
+
+                    <label for="guests">Número de Convidados</label>
+
+                    <div class="input-container">
+                        <button>
+                            <i class="fas fa-male"></i>
+                        </button>
+                        <input type="number" id="guests" />
+                    </div>
+
+                    <label for="quality">Qualidade do Serciço</label>
+
+                    <select id="quality">
+                        <option disabled selected value="0">Escolha...</option>
+                        <option value="0.3">30% - Excelente</option>
+                        <option value="0.2">20% - Bom</option>
+                        <option value="0.15">15% - Regular</option>
+                        <option value="0.1">10% - Ruim</option>
+                        <option value="0.05">5% - Péssimo</option>
+                    </select>
+
+                    <div class="button-container">
+                        <div class="line-title"></div>
+                        <div class="calc-button" onclick="calculate()">
+                            Calcular
+                        </div>
+                    </div>
+                </div>
+                <div id="tip-amount"></div>
+            </div>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
